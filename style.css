@@ -31,6 +31,7 @@ a {
   position: fixed;
   margin-left: -300px;
   transition: 0.4s;
+  background-color: #1437ad;
 }
 
 .active-main-content {
@@ -40,12 +41,21 @@ a {
 .active-sidebar {
   margin-left: 0;
 }
+
+.img-sidebar {
+  width: 100%;
+  height: auto;
+  /* position: fixed;
+  margin-left: -300px; */
+}
 .linker {
   color: #5a96e3;
 }
+
 .form {
   margin-left: 500px;
 }
+
 #main-content {
   transition: 0.4s;
 }
