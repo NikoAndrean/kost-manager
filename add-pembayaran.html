@@ -21,7 +21,7 @@
   </head>
   <body>
     <div>
-      <div class="sidebar p-4" id="sidebar">
+      <div class="sidebar p-4 bg-primary" id="sidebar">
         <img src="assets/logo.png" alt="" class="img-sidebar" />
         <li>
           <a class="text-white" href="#">
@@ -30,7 +30,7 @@
           </a>
         </li>
         <li>
-          <a class="text-white" href="#">
+          <a class="text-white" href="home.html">
             <i data-feather="home"></i>
             Dashboard
           </a>
@@ -76,51 +76,132 @@
           </div>
         </div>
       </nav>
-      <h4>Dasbor</h4>
-      <h2 style="text-align: center; margin-bottom: 20px">KOST MANAGER</h2>
-      <img
-        src="assets/hero.jpg"
-        style="width: 100%; padding: 0; border: 1.5px solid black"
-      />
-      <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-          <div class="card mt-5" style="height: 250px">
-            <div class="card-body">
-              <h2 class="card-title">Visi</h2>
-              <ul>
-                <li class="list">
-                  Menjadi platform sistem informasi manajemen kost terbaik dan
-                  terpercaya yang memberikan kemudahan dan kenyamanan bagi
-                  pengguna.
-                </li>
-                <li class="list">
-                  Membuat manajemen kost menjadi lebih mudah dan efisien dengan
-                  teknologi.
-                </li>
-              </ul>
+
+      <h4>Tambah Pembayaran</h4>
+      <p>Dasbor/<span class="linker">Tambah Pembayaran</span></p>
+      <div class="card mt-5">
+        <div class="card-body">
+          <h3>Tambah Pembayaran</h3>
+          <form>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputLantai" class="form-label">No Kamar</label>
+              </div>
+              <div class="col-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="101"
+                  disabled
+                />
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="card mt-5" style="height: 250px">
-            <div class="card-body">
-              <h2 class="card-title">Misi</h2>
-              <ul>
-                <li class="list">
-                  Menyediakan sistem informasi menajemen kost berbasis web yang
-                  user friendly, terjangkau dan dapat diakses dari mana saja.
-                </li>
-                <li class="list">
-                  Menjaga komitmen untuk memberikan pelayanan terbaik dan
-                  kepuasan pelanggan yang tinggi.
-                </li>
-              </ul>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputNoKamar" class="form-label"
+                  >Nama lengkap</label
+                >
+              </div>
+              <div class="col-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="David"
+                  disabled
+                />
+              </div>
             </div>
-          </div>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputHargaAwal" class="form-label">No. KTP</label>
+              </div>
+              <div class="col-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="2147483647"
+                  disabled
+                />
+              </div>
+            </div>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputHargaBaru" class="form-label"
+                  >Jumlah Pembayaran</label
+                >
+              </div>
+              <div class="col-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputHargaBaru" class="form-label"
+                  >Tanggal Transaksi</label
+                >
+              </div>
+              <div class="col-10">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputHargaBaru" class="form-label"
+                  >Keterangan</label
+                >
+              </div>
+              <div class="col-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="margin-left: 182px"
+            >
+              Submit
+            </button>
+
+            <button
+              type="submit"
+              class="btn btn-danger"
+              style="margin-left: 10px"
+            >
+              Batal
+            </button>
+            <button
+              type="submit"
+              class="btn btn-light"
+              style="margin-left: 10px"
+            >
+              Reset
+            </button>
+          </form>
         </div>
       </div>
     </section>
-
     <footer class="bg-light text-center text-lg-start">
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
