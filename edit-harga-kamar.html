@@ -77,99 +77,85 @@
         </div>
       </nav>
 
-      <h4>Daftar Penghuni</h4>
-      <p>Dasbor/<span class="linker">Daftar Penghuni</span></p>
+      <h4>Edit Harga Kamar</h4>
+      <p>Dasbor/<span class="linker">Edit Harga Kamar</span></p>
       <div class="card mt-5">
         <div class="card-body">
-          <h3>Daftar Penghuni</h3>
-
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <p class="nav-link">tampilkan</p>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      25
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <p class="nav-link">entri</p>
-                  </li>
-                </ul>
-                <form class="form d-flex">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-outline-success" type="submit">
-                    Search
-                  </button>
-                </form>
+          <h3>Edit Harga Kamar</h3>
+          <form>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputLantai" class="form-label">Lantai</label>
+              </div>
+              <div class="col-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
               </div>
             </div>
-          </nav>
-          <div class="table-responsive">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">No</th>
-                  <th scope="col">Lantai</th>
-                  <th scope="col">No.kamar</th>
-                  <th scope="col">Harga per Bulan</th>
-                  <th scope="col">Harga per Tahun</th>
-                  <th scope="col">Status Kamar</th>
-                  <th scope="col">Aksi</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Lantai 1</td>
-                  <td>101</td>
-                  <td>Rp500.000,00</td>
-                  <td>Rp6.000.000,00</td>
-                  <td>sudah berpenghuni</td>
-                  <td>
-                    <i data-feather="plus"></i><i data-feather="edit"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Lantai 1</td>
-                  <td>102</td>
-                  <td>Rp400.000,00</td>
-                  <td>Rp5.000.000,00</td>
-                  <td>sudah berpenghuni</td>
-                  <td>
-                    <i data-feather="plus"></i><i data-feather="edit"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Lantai 3</td>
-                  <td>101</td>
-                  <td>Rp300.000,00</td>
-                  <td>Rp4.000.000,00</td>
-                  <td>sudah berpenghuni</td>
-                  <td>
-                    <i data-feather="plus"></i><i data-feather="edit"></i>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputNoKamar" class="form-label">No. Kamar</label>
+              </div>
+              <div class="col-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputHargaAwal" class="form-label"
+                  >Harga Awal Per Bulan</label
+                >
+              </div>
+              <div class="col-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="mb-3 mt-3 row d-flex align-items-center">
+              <div class="col">
+                <label for="InputHargaBaru" class="form-label"
+                  >Harga Baru Per Bulan</label
+                >
+              </div>
+              <div class="col-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="margin-left: 182px"
+            >
+              Submit
+            </button>
+
+            <button
+              type="submit"
+              class="btn btn-danger"
+              style="margin-left: 10px"
+            >
+              Batal
+            </button>
+          </form>
         </div>
       </div>
     </section>
