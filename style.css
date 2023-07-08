@@ -14,12 +14,12 @@ li {
 .hero {
   display: flex;
   align-items: center;
-	min-height: 300px;
+  min-height: 300px;
   width: 100%;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 5, .5), rgba(0, 0, 5, .5)), url('./assets/hero.jpg');
+  background-image: linear-gradient(rgba(0, 0, 5, 0.5), rgba(0, 0, 5, 0.5)),
+    url("./assets/hero.jpg");
   background-size: cover;
-  
 }
 
 .hero-inner {
@@ -28,10 +28,10 @@ li {
 }
 
 .hero-title {
-	color: white;
-	font-weight: 600;
-	font-size: 40px;
-	text-shadow: 2px 2px black;
+  color: white;
+  font-weight: 600;
+  font-size: 40px;
+  text-shadow: 2px 2px black;
 }
 
 a {
@@ -46,7 +46,7 @@ a {
 }
 
 .form-right {
-  background-color: #1D3550; 
+  background-color: #1d3550;
 }
 
 .sidebar {
@@ -55,7 +55,7 @@ a {
   position: fixed;
   margin-left: -300px;
   transition: 0.4s;
-  background-color: #1D3550;
+  background-color: #1d3550;
 }
 
 .active-main-content {

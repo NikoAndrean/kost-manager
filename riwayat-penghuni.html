@@ -15,11 +15,89 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style.css" />
     <!-- Feather icon -->
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Info</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td>No.Kamar</td>
+                  <td>101</td>
+                </tr>
+                <tr>
+                  <td>Nama</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <td>No. KTP</td>
+                  <td>2147483647</td>
+                </tr>
+                <tr>
+                  <td>Alamat</td>
+                  <td>Ds Darmorejo RT 05/02 Mejayan Madiun</td>
+                </tr>
+                <tr>
+                  <td>No. Telp</td>
+                  <td>081333896104</td>
+                </tr>
+                <tr>
+                  <td>Tanggal Huni</td>
+                  <td>01-08-2019 s/d 31-07-2020</td>
+                </tr>
+                <tr>
+                  <td>Jumlah Harus Dibayar</td>
+                  <td>Rp5400000</td>
+                </tr>
+                <tr>
+                  <td>Jumlah Telah Dibayar</td>
+                  <td>Rp5100000</td>
+                </tr>
+                <tr>
+                  <td>Sisa Piutang</td>
+                  <td>Rp300000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div>
       <div class="sidebar p-4" id="sidebar">
         <img src="assets/logo.png" alt="" class="img-sidebar" />
@@ -37,7 +115,7 @@
         </li>
         <li class="text-primary">KAMAR</li>
         <li>
-          <a class="text-white" href="#">
+          <a class="text-white" href="daftar-kamar.html">
             <i data-feather="list"></i>
             Daftar Kamar
           </a>
@@ -83,11 +161,12 @@
           </div>
         </div>
       </nav>
-      <h4>Daftar Kamar</h4>
-      <p>Dasbor/<span class="linker">Daftar Kamar</span></p>
+
+      <h4>Riwayat Penghuni</h4>
+      <p>Dasbor/<span class="linker">Riwayat Penghuni</span></p>
       <div class="card mt-5">
         <div class="card-body">
-          <h3>Daftar Kamar</h3>
+          <h3>Riwayat Penghuni</h3>
 
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -131,56 +210,41 @@
               <thead>
                 <tr>
                   <th scope="col">No</th>
-                  <th scope="col">Lantai</th>
-                  <th scope="col">No.kamar</th>
-                  <th scope="col">Harga per Bulan</th>
-                  <th scope="col">Harga per Tahun</th>
-                  <th scope="col">Status Kamar</th>
-                  <th scope="col">Aksi</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">No. KTP</th>
+                  <th scope="col">Alamat</th>
+                  <th scope="col">No. Telp</th>
+                  <th scope="col">Tanggal Keluar</th>
+                  <th scope="col">Keterangan</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td>Lantai 1</td>
-                  <td>101</td>
-                  <td>Rp500.000,00</td>
-                  <td>Rp6.000.000,00</td>
-                  <td>sudah berpenghuni</td>
-                  <td>
-                    <a style="color: black"href="add-penghuni.html"><i data-feather="plus"></i></a>
-                    <a style="color: black" href="edit-harga-kamar.html"
-                      ><i data-feather="edit"></i
-                    ></a>
-                  </td>
+                  <td>Thornton</td>
+                  <td>2147483647</td>
+                  <td>Ds Darmorejo RT 05/02 Mejayan Madiun</td>
+                  <td>081333896104</td>
+                  <td>31-07-2020</td>
+                  <td>Keluar</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td>Lantai 1</td>
-                  <td>102</td>
-                  <td>Rp400.000,00</td>
-                  <td>Rp5.000.000,00</td>
-                  <td>sudah berpenghuni</td>
-                  <td>
-                    <i data-feather="plus"></i>
-                    <a style="color: black" href="edit-harga-kamar.html"
-                    ><i data-feather="edit"></i
-                  ></a></i>
-                  </td>
+                  <td>Yoga Pratama</td>
+                  <td>21532536i3</td>
+                  <td>Jl Barukan RT 01/02 Semarang</td>
+                  <td>089204854924</td>
+                  <td>17-08-2021</td>
+                  <td>Blacklist</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td>Lantai 3</td>
-                  <td>101</td>
-                  <td>Rp300.000,00</td>
-                  <td>Rp4.000.000,00</td>
-                  <td>sudah berpenghuni</td>
-                  <td>
-                    <i data-feather="plus"></i>
-                    <a style="color: black" href="edit-harga-kamar.html"
-                    ><i data-feather="edit"></i
-                  ></a></i>
-                  </td>
+                  <td>Alex</td>
+                  <td>3249059483</td>
+                  <td>Jl. Slawi Wetan RT 02/05 Tegal</td>
+                  <td>081375934953</td>
+                  <td>03-04-2021</td>
+                  <td>Keluar</td>
                 </tr>
               </tbody>
             </table>
